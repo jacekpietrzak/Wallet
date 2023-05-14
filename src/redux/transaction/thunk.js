@@ -39,6 +39,7 @@ export const deleteTransactions = createAsyncThunk(
         `https://wallet.goit.ua/api/transactions/${transactionId}`
       );
       return res.data;
+      // return transactionId;
     } catch (error) {
       return console.error(error.message);
     }

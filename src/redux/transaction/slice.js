@@ -80,6 +80,7 @@ export const financesSlice = createSlice({
 
       const index = state.transactions.findIndex(
         transaction => transaction.id === action.meta.arg
+        // transaction => transaction.id === payload
       );
       state.transactions.splice(index, 1);
     },
